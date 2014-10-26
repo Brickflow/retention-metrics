@@ -1,0 +1,34 @@
+{
+  "name": "retention-metrics",
+  "version": "0.0.1",
+  "description": "Simple retention calculator for series of events",
+  "main": "index.js",
+  "scripts": {
+    "test": "set -e;  jshint index.js lib/* test/*; for t in test/*.js; do echo '***' $t '***'; node $t; done",
+    "cover": "covert test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brickflow/retention-metrics.git"
+  },
+  "keywords": [
+    "retention",
+    "funnel",
+    "metrics",
+    "event",
+    "timeseries",
+    "analytics"
+  ],
+  "author": "Tamas Kokeny <tamas.kokeny.87@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brickflow/retention-metrics/issues"
+  },
+  "homepage": "https://github.com/Brickflow/retention-metrics",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "tape": "^3.0.1"
+  }
+}
